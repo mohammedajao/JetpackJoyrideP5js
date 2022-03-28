@@ -6,5 +6,7 @@ const config = {
     },
     "gravity": 0.1,
     "frameCount": 60,
-    "scrollSpeed": 10
+    "scrollSpeed": 10,
+    "rocketFrequency": 5,
+    "levelFrequency": 30
 }

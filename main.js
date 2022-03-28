@@ -26,14 +26,14 @@ function setup() {
 }
 
 function draw() {
-    background(0);
-    // push();
+    if(MANAGER.paused && !MANAGER.ended) {
+        background(0, 0.5);
+    } else if (!MANAGER.ended) {
+        background(0);
+    }
     MANAGER.update();
-    // pop();
 
     fill(255, 0, 100);
-    // let dn = plrSpritesheet.get(0, 0, 50, 50);
-    // image(dn, 0, 0)
 }
 
 // function keyPressed() {
